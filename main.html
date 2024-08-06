@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Merriweather:ital,wght@0,300;0,400;0,700;0,900;1,300;1,400;1,700;1,900&family=Montserrat:ital,wght@0,100..900;1,100..900&family=Playfair+Display:ital,wght@0,400..900;1,400..900&display=swap"
+      rel="stylesheet"
+    />
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="./css/pageContainer.css" />
+    <link rel="stylesheet" href="./css/uploader.css" />
+
+    <title>File Uploader</title>
+  </head>
+  <body>
+    <div class="page-container">
+      <section class="uploader__container">
+        <div class="uploader__title">
+          <h1>Snakes and Ladder Image Uploader</h1>
+          <p>Choose 5 images to upload to the "Snakes and Ladder" server</p>
+        </div>
+        <label for="uploadInput" class="select__label"> Select Images </label>
+
+        <input id="uploadInput" type="file" multiple />
+        <div class="img-names__container"></div>
+      </section>
+    </div>
+    <script src="fileUploader.js"></script>
+  </body>
+</html>
