@@ -69,7 +69,7 @@ const sendImgs = async (images) => {
   });
 
   try {
-    const response = await fetch("http://localhost:3000/upload", {
+    const response = await fetch("http://192.168.3.3:3000/upload", {
       method: "POST",
       body: formData,
     });
@@ -86,6 +86,7 @@ const sendImgs = async (images) => {
       imgNames.append(responseMessage);
     }
   } catch (error) {
+    console.log(error);
     errorMsg.textContent = error.message;
     errorMsg.style.color = "red";
     uploaderContainer.append(errorMsg);
