@@ -69,10 +69,13 @@ const sendImgs = async (images) => {
   });
 
   try {
-    const response = await fetch("http://192.168.3.3:3000/upload", {
-      method: "POST",
-      body: formData,
-    });
+    const response = await fetch(
+      "https://1569-2400-2650-20a1-4700-744a-c577-5024-30d1.ngrok-free.app/upload",
+      {
+        method: "POST",
+        body: formData,
+      }
+    );
 
     if (!response.ok) {
       throw new Error(`Error: ${response.status} Unable to find requested URL`);
